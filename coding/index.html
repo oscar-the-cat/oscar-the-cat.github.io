@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stuff.css" />
+		<title>oscar wilson</title>
+		<script>
+			function banner() {
+				var text=confirm("are you ready for a surprise??");
+				return text;
+			}
+			function answer() {
+				var radio=document.getElementsByName("trivia");
+				var selection=false;
+				var message="";
+				for (var i = 0; i < radio.length; i++) {
+					if (radio[i].value == "yes" && radio[i].checked == true) {
+						selection = true;
+					}//end if statement
+				}//end for loop
+				if(selection == true) {
+					message = message + "<b><p style='color:green'>you are correct.</p></b>";
+				} else {
+					message = message + "<b><p style='color:red'>nope.</p></b>"
+				}
+					document.getElementById("response").innerHTML = message;
+			}//end function answer
+		</script>
+	</head>
+	<body>
+		<a onclick="return banner()" href="https://cat-bounce.com/">
+			<header id="banner">the best kitty ever</header>
+		</a>
+		<nav>
+			<ul id="navmenu">
+				<li class="navitem"><a href="oscarvid.html">gallery</a></li>
+				<li class="navitem"><a href="oscarfunfacts.html">fun facts about me</a></li>
+				<li class="navitem"><a href="myhumans.html">my humans</a></li>
+			</ul>
+		<h2 class="bodygraph">this is a website about oscar wilson, the king and guard cat of the wilson household.</h2>
+		<div>
+			<a href="https://www.facebook.com/osca.wilson/"><img class="fb" src="https://lh3.googleusercontent.com/lG_bBVdOz5R1TSaKgP8g02OLRhDVFqy2SSbJv49i9tCe84BToUZ0F8DWcwUsXFSvaDabBGqZWhjMltJC7bY8urGCFS8jeF2topqNqMw8Yutz3SyflzvVZuVtw1NdY7Nf6P48gqmki5SlHP3X-nsghl6rVygLQYuaQlD8yoP5TOHF6wlKo3iaxB9rW1jUXh0QnrrLjf1yIFBM4N8hnp6QmdETho1lsr9lNqEljVtfRdP1LqR8v6yzO4S941_gbQT597vkLitloMSYeZ4gXorVfFEHvzkUcb2mKNl9zvarmednHJoe0K8GOWFpQ9av5dKAjJHm6X8NRCO1cD9lFlwdVUHnaXcRhwxl8BTbiKCOSSeRg2jpC0_DCTowpRMxudbS6x1j83kCf3cImH38q1USTrlSGJqvrYNoOhgcyYS1T7tQB8gtTaHrWUbSsUwiPOekdWE9DSiM9gEE9Otr0UOvXO0GqaVDLwlSRiAbd1luE4Xca99601CR1uCx29MgCMThPg-h9zHKIDSZChPuIOn_H2eGLlVWmOM-HP07C6hI-lm6-fRMd7mo__ummTEf6uwAJVh8qmHjvC7l_YTSEf6gdyk6MSJGUM6XcVmot-dTcbcfZnAMqyvjIhE9eQ30ISN3yj4_oovsmxpi4-66ckCKhJGpi6WyVAsjZg-TqFWLed-g0poFlBHawyw=w1061-h794-no"/></a>
+			<h3 class="fb2">click the photo to like my facebook!!</h3>
+		</div>
+		<h2 class="words">IMPORTANT QUESTION!</h2>
+	 	<p class="question">what is my favorite toy?</p>
+	 	<div class="question">
+		 	<form>
+		 	<div id="response">
+		 	</div>
+		 		<input type="radio" name="trivia" value="no">shoelaces<br>
+		 		<input type="radio" name="trivia" value="yes">Sven<br>
+		 		<input type="radio" name="trivia" value="no">toys are for children<br>
+		 		<input type="radio" name="trivia" value="no">rubber mouse<br>
+		 		<input onclick="answer()" class="button" type="button" value="click to find out!!!!!">
+		 	</form>
+		 </div>
+		 <p class="vidw">here's a random vine because it's required for this website but like also just for fun.</p>
+		 <iframe class="vid" width="560" height="315" src="https://www.youtube.com/embed/Ddv7Ru2Pwys" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>video can't be played :/</iframe>
+		 <p class="vidw">also here's this horse noise.</p>
+		 <audio class="vid" width="400" height="220" controls autoplay>
+			<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+			horse noise can't be played :/
+		</audio>
+		<p class="vidw">and another adorable picture for your viewing pleasure :)</p>
+		<img class="lphoto" src="https://lh3.googleusercontent.com/KmXXYbuoCyI3I8zKysIerCSRz5yD2BeHuW4rbk9hCAhYP-tTgW9gj6ATsp7AOa5wZbgVWpMB7-oXseRTz1r6zM_rydf7gEFrKYr0jhd1rjueK2Z99AkBYBDNXn6cGB8E1Ds8bQYK6J79oNppH8_Ra-ECHJztAq04k_3eOA5MPuxDiHLRZVbi0Nnx3o17w9HQEEnMUAh1oQl0e-DLP-sL6hmIp02hjPNNB8V0E1Fgy4ggeBanDXxjXRLytSA5XKU_X-spehj-spZgEKocfpDYvUREAlpAbH2OFhAqrD9hHEz5NQljiTXQKC1Xf2kBNUQG4FwuGyE5Wg8I8kVN5WfHRbfnxWYufrVcbEdKOkWqfivalmt0q7N0ta2cjSAn8zD8aYUI0f9Komqi3dIThELsjoYqS3YKuHJvu2gDTZftZpJURz3_eTV4G7sXNO8suYPOi7MciaU38bvqhFcc9cbP0OiXdU1l9QeioNrjRON_2gK3syBa8YSyJyrtQ6iR6wy8do0zHnS5hGJI2YpVluFl6MmUMYz0DkVk8VxetW7sPHhdtLvVwU9RP88e5ukniHfGVmSKcmGrQW2ELvPLhjDpgmK8s5j_WJX3aMNvx5Jo8yu-pwBy3nnQJTUNJI_itMc5XFle7lgnXQYN0s13gz9Y21A1CFInPsJJA7pX7TdX3qKcvB6yxCKdfiw=w596-h794-no"/>
+	</body>
+</html>
